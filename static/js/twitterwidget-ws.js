@@ -1,5 +1,5 @@
-//JQuery Twitter Feed. Coded by Tom Elliott @ www.webdevdoor.com (2013) based on https://twitter.com/javascripts/blogger.js
-//Requires JSON output from authenticating script: http://www.webdevdoor.com/php/authenticating-twitter-feed-timeline-oauth/
+//JQuery Twitter Feed fed via Websocket
+//Based on example by Tom Elliott @ www.webdevdoor.com (2013)
 
 $(document).ready(function () {
     var ws;
