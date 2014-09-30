@@ -4,15 +4,15 @@
 $(document).ready(function () {
     var ws;
     var displaylimit = 30;
-    var twitterprofile = "social_west";
-    var screenname = "Water Analysts";
+    var twitterprofile = "";
+    var screenname = "";
     var showdirecttweets = false;
     var showretweets = true;
     var showtweetlinks = true;
     var showprofilepic = true;
     var showtweetactions = true;
     var showretweetindicator = true;
-    var openfilter_wss = 'wss://openfilter.co'
+    var openfilter_wss = ''
     var headerHTML = '';
     var tweetsHTML = '';
     var loadingHTMLOn = 1;

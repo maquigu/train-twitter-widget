@@ -1,6 +1,7 @@
 BayesTwitterWidget
 ==================
 
+For a working example go to: https://openfilter.co/socket.html
 This project has the following dependencies:
 - Celery
 - RabbitMQ
