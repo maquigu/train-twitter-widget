@@ -1,2 +1,2 @@
-TwitterBayesFilter
+BayesTwitterWidget
 ==================
