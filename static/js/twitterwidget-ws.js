@@ -12,7 +12,7 @@ $(document).ready(function () {
     var showprofilepic = true;
     var showtweetactions = true;
     var showretweetindicator = true;
-    var openfilter_wss = ''
+    var openfilter_wss = 'ws://openfilter.co:7778'
     var headerHTML = '';
     var tweetsHTML = '';
     var loadingHTMLOn = 1;
@@ -25,7 +25,7 @@ $(document).ready(function () {
     
     $('#twitter-feed').html(headerHTML + tweetsHTML);
      
-    ws = new WebSocket(openfilter_wss + '/ws-list-feed/openfilter/ca-water-analyst');
+    ws = new WebSocket(openfilter_wss + '/ws-stream-feed/water');
 
     ws.onopen = function(){
         console.log('Connected to Server');
@@ -44,7 +44,7 @@ $(document).ready(function () {
                 return;
             }
             console.log('Direction: ' + direction)
-            var feeds = message['statuses'];
+            var feeds = message['tweets'];
             console.log('Retrieved ' + feeds.length + ' ' + direction + ' message(s)');
            //alert(feeds);
             var feedHTML = '';
