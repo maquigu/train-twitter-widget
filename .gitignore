@@ -52,3 +52,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# vi swap files
+.*.swp
+.*.swo
