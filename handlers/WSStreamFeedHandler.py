@@ -37,7 +37,7 @@ class WSStreamFeedHandler(WebSocketHandler):
         cursor = json_decode(message)
         if 'remove_tweet' in cursor:
             log.debug('Removing tweet id %s from %s Stream' % (cursor['remove_tweet'], self.stream_name))
-            
+            #ret = widget_tasks.remove_tweet.apply_async(args, queue=config.celery_queue, callback=self.on_remove_tweet_return) 
             self.write_message(json_encode({'removed': 'OK'}))
             return
         if cursor['direction'] == 'new':

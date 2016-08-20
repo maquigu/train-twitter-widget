@@ -4,22 +4,22 @@
 $(document).ready(function () {
     var ws;
     var displaylimit = 30;
-    var twitterprofile = "";
-    var screenname = "";
+    var twitterprofile = "social_west";
+    var streamName = "CA Water";
     var showdirecttweets = false;
     var showretweets = true;
     var showtweetlinks = true;
     var showprofilepic = true;
     var showtweetactions = true;
     var showretweetindicator = true;
-    var openfilter_wss = 'ws://openfilter.co:7778'
+    var openfilter_wss = 'wss://openfilter.co'
     var headerHTML = '';
     var tweetsHTML = '';
     var loadingHTMLOn = 1;
     headerHTML += '<div id = "widget-header">';
     headerHTML += '<div id="bird"><a href="https://twitter.com/" target="_blank"><img src="images/twitter-bird-light.png" width="24" style="float:left;padding:9px 12px 0px 12px" alt="twitter bird" /></a></div>';
     headerHTML += '<div id="of_logo"><a href="https://openfilter.co/" target="_blank"></a></div>';
-    headerHTML += '<div id="title-name"><h1>'+screenname+'</h1><span style="font-size:13px;font-style:italic">a list by <a href="https://twitter.com/'+twitterprofile+'" target="_blank">@'+twitterprofile+'</a></span></div>';
+    headerHTML += '<div id="title-name"><h1>'+streamName+'</h1><span style="font-size:13px;font-style:italic">A stream by <a href="https://twitter.com/'+twitterprofile+'" target="_blank">@'+twitterprofile+'</a></span></div>';
     headerHTML += '</div>';
     tweetsHTML += '<div id="tweets-container"><img id="loading-image" src="images/ajax-loader.gif" alt="tweet loader" /></div>';
     
